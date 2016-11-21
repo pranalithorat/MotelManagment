@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bluesky"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:id="@+id/Arefresh"
+                android:layout_weight="0.14" />
+
+            <TextView
+               android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="King Size Rooms"
+                android:id="@+id/textView2"
+                android:layout_weight="0.14"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="100dp" />
+        </TableRow>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/AradioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+
+                            android:button="@android:color/transparent"
+                            android:text="101"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:id="@+id/Abtn101" />
+
+                        <RadioButton
+
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="102"
+                            android:id="@+id/Abtn102"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="103"
+                            android:id="@+id/Abtn103"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="104"
+                            android:id="@+id/Abtn104"
+                            android:layout_marginLeft="10dp" />
+
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="105"
+                            android:id="@+id/Abtn105"
+                            android:layout_gravity="right"
+                            android:checked="false"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="201"
+                            android:id="@+id/Abtn201"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="202"
+                            android:id="@+id/Abtn202"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="203"
+
+                            android:id="@+id/Abtn203"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="204"
+                            android:id="@+id/Abtn204"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="205"
+                            android:id="@+id/Abtn205"
+                            android:layout_marginLeft="10dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Queen Size Rooms"
+                    android:id="@+id/queen"
+                    android:layout_weight="0.14"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginLeft="220dp" />
+            </TableRow>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/AradioGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="106"
+                            android:id="@+id/Abtn106" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="107"
+                            android:id="@+id/Abtn107"
+                            android:checked="false"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="108"
+                            android:id="@+id/Abtn108"
+                            android:checked="false"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="109"
+                            android:id="@+id/Abtn109"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="110"
+                            android:id="@+id/Abtn110"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="206"
+                            android:id="@+id/Abtn206"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="207"
+                            android:id="@+id/Abtn207"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="208"
+                            android:id="@+id/Abtn208"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#ffffff"
+                            android:button="@android:color/transparent"
+                            android:text="209"
+                            android:id="@+id/Abtn209"
+                            android:layout_marginLeft="10dp" />
+
+                        <RadioButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:textStyle="bold"
+                            android:background="#33ccff"
+                            android:button="@android:color/transparent"
+                            android:text="210"
+                            android:id="@+id/Abtn210"
+                            android:layout_marginLeft="10dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MotelMgmtApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_reservation">NewReservation</string>
+    <string name="title_activity_stay_details">StayDetails</string>
+    <string name="title_activity_charges">Charges</string>
+    <string name="title_activity_guest_details">GuestDetails</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_available_rooms">AvailableRooms</string>
+    <string name="title_activity_occupied">Occupied</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_activity_dirty_rooms">DirtyRooms</string>
+    <string name="title_activity_facilities">Facilities</string>
+
+    <string name="title_activity_dirty_room">DirtyRoom</string>
+    <string name="title_activity_show_room_details">ShowRoomDetails</string>
+</resources>

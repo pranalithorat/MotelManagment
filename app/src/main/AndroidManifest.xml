@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.motelmgmtapp">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.GuestActivities"
+            android:label="@string/title_activity_guest_details"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ChargesActivities"
+            android:label="@string/title_activity_charges"
+            android:parentActivityName=".activities.StayActivities"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.activities.StayActivities" />
+        </activity>
+        <activity
+            android:name=".activities.ShowRoomDetails"
+            android:label="@string/title_activity_show_room_details"
+            android:parentActivityName=".Occupied"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.Occupied" />
+        </activity>
+        <activity
+            android:name=".activities.StayActivities"
+            android:label="@string/title_activity_stay_details"
+            android:parentActivityName=".activities.GuestActivities"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.activities.GuestActivities" />
+        </activity>
+        <activity
+            android:name=".activities.PaymentActivities"
+            android:label="@string/title_activity_payment"
+            android:parentActivityName=".activities.ChargesActivities"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.activities.ChargesActivities" />
+        </activity>
+        <activity
+            android:name=".AvailableRooms"
+            android:label="@string/title_activity_available_rooms"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Occupied"
+            android:label="@string/title_activity_occupied"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Checkout"
+            android:label="@string/title_activity_checkout"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.DirtyRoom"
+            android:label="@string/title_activity_dirty_room"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DirtyRooms"
+            android:label="@string/title_activity_dirty_rooms"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activities.Facilities"
+            android:label="@string/title_activity_facilities"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.motelmgmtapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
